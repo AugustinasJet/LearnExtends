@@ -59,10 +59,7 @@ class Boy {
 class Boyfriend extends Boy {
 
     public function winArgument() {
-        if (rand(0, 1)) {
-            return parent::winArgument();
-        }
-        return 'Not this time';
+        return (rand(0, 1)) ? parent::winArgument() : 'Not this time';
     }
 
 }
