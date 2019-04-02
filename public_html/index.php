@@ -64,6 +64,12 @@ class Boyfriend extends Boy {
 
 }
 
+class Husband extends Boyfriend {
+    public function winArgument() {
+        return (rand(0, 1000000)===3) ? parent::winArgument() : 'Not this time';
+    }
+}
+
 $girl = new HorribleWife(21, 'black');
 $message = $girl->pistiProta();
 print 'Amzius: ' . $girl->getAge();
