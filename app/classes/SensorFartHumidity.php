@@ -5,7 +5,7 @@ namespace App;
 class SensorFartTemp extends Abstracts\Sensor {
 
     public function read() {
-        return $this->reading = rand(365, 425) / 10;
+        return $this->reading = rand(0, 100) . '%';
     }
 
 }
