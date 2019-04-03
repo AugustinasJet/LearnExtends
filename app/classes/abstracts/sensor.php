@@ -8,7 +8,7 @@ abstract class Sensor {
 
     abstract protected function read();
 
-    protected function getLastReading() {
+    public function getLastReading() {
         return $this->reading;
     }
 

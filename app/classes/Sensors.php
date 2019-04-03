@@ -1,19 +1,29 @@
 <?php
 
+namespace App;
+
 class Sensors {
 
-    private $data;
+    private $sensors;
+    
+    public function __construct() {
+        $this->sensors=[];
+    }
 
     public function add($id, App\Abstracts\Sensor $sensor) {
-        $this->data[$id] = $sensor;
+        $this->sensors[$id] = $sensor;
     }
 
     public function getReading($id) {
-        return $this->data[$id];
+        return $this->sensors[$id]->read();
     }
 
     public function getReadings() {
-        return $this->data;
+        $data = [];
+        foreach ($this->sensors as $key => $sensor) {
+            $data[$key]=$sensor->read();
+        }
+        return $data;
     }
 
 }
