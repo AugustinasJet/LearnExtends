@@ -1,11 +1,6 @@
 <?php
 require '../bootloader.php';
 
-$db = new Core\FileDB(DB_FILE);
-$zmoniu_arr = new \App\Model\ModelUser($db, TABLE_USERS);
-$gerimu_arr = new \App\Model\ModelGerimai($db, TABLE_DRINKS);
-
-$party = new \App\Party($zmoniu_arr, $gerimu_arr);
 ?>
 
 <!doctype html>
