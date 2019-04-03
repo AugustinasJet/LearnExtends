@@ -1,0 +1,97 @@
+html, body {
+    margin: 0;
+    text-align: center;
+}
+
+.nav ul {
+    padding: 5px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.nav ul li {
+    display: inline-block;
+    border: solid 1px #b86927;
+    padding: 8px;
+    border-radius: 15px;
+}
+
+li:hover {
+    background: #b86927;
+    transition: all 1s ease;
+}
+
+.nav ul li a {
+    color: #4b291d;
+    text-decoration: none;
+    font-family: 'Montserrat';
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+h1  {
+    color: #38231c;
+}
+
+h2 {
+    color: #b86927;
+
+}
+
+.user-element {
+    border: 2px #fafafa solid;
+    display:inline-block;
+    background-color: white;
+
+}
+
+.user-element img {
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+}
+
+.user-element p{
+    padding: 5px 10px;
+}
+
+.bringit {
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.forma {
+    margin: 50px auto;
+}
+
+/*background*/
+.poop {
+    background-image: url("/images/poop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.prie_tevu {
+    background-image: url("/images/prie_tevu.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.good {
+    background-image: url("/images/good.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.fire {
+    background-image: url("/images/fire.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.vomittron {
+    background-image: url("/images/vomittron.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/*background*/
+
