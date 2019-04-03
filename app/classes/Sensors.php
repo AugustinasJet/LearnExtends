@@ -1,18 +1,19 @@
-<?php 
+<?php
 
 class Sensors {
-    
-    private $sensors;
-    
+
+    private $data;
+
     public function add($id, App\Abstracts\Sensor $sensor) {
-        $this->sensors[$id]=$sensor;
+        $this->data[$id] = $sensor;
     }
-    
+
     public function getReading($id) {
-        return $this->sensors[$id];
+        return $this->data[$id];
     }
-    
-    public function getReadings(){
-        return $this->sensors;
+
+    public function getReadings() {
+        return $this->data;
     }
+
 }
