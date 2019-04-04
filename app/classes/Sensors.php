@@ -10,7 +10,7 @@ class Sensors {
         $this->sensors=[];
     }
 
-    public function add($id, App\Abstracts\Sensor $sensor) {
+    public function add($id, \App\Abstracts\Sensor $sensor) {
         $this->sensors[$id] = $sensor;
     }
 
